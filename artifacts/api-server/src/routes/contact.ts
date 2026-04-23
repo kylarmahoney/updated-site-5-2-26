@@ -29,7 +29,7 @@ router.post("/contact", async (req, res) => {
 
     const payload: Record<string, unknown> = {
       from: "Mahoney Tech Solutions <noreply@mahoneytechsolutions.com>",
-      to: "kylar@mahoneytechsolutions.com",
+      to: "support@mahoneytechsolutions.com",
       subject: `New Lead: ${cleanService} — ${cleanName}`,
       html: `
         <h2>New Lead from MahoneyTechSolutions.com</h2>

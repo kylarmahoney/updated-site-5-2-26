@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
+import { useSEO } from "@/hooks/use-seo";
 
 const BOOKING_URL = "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3Hk4mSI1Q34yehBopGkPiOjENn3Rt3XSyL_kPdAd48SycFuN9aJaaMhyols9kXL1ajBORZmouT";
 
@@ -238,6 +239,12 @@ function ServiceCard({ svc }: { svc: typeof servicesList[0] }) {
 }
 
 export default function Services() {
+  useSEO({
+    title: "Services | Mahoney Tech Solutions | Galveston, TX",
+    description: "IT support services in Galveston, TX — computer repair, Wi-Fi, cybersecurity, printer setup, POS systems, email help, and more. On-site and remote.",
+    canonical: "https://mahoneytechsolutions.com/services",
+  });
+
   return (
     <Layout>
       {/* HEADER */}

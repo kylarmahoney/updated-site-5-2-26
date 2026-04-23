@@ -1,7 +1,14 @@
 import { Layout } from "@/components/layout/Layout";
 import { Tag } from "@/components/ui/tag";
+import { useSEO } from "@/hooks/use-seo";
 
 export default function About() {
+  useSEO({
+    title: "About | Mahoney Tech Solutions | Galveston, TX",
+    description: "Meet Kylar Mahoney — Galveston-based IT and cybersecurity specialist serving residents and small businesses with honest, reliable tech support.",
+    canonical: "https://mahoneytechsolutions.com/about",
+  });
+
   return (
     <Layout>
       {/* HEADER / BIO */}

@@ -2,10 +2,17 @@ import { useEffect, useRef, useState } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "wouter";
+import { useSEO } from "@/hooks/use-seo";
 
 const BOOKING_URL = "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3Hk4mSI1Q34yehBopGkPiOjENn3Rt3XSyL_kPdAd48SycFuN9aJaaMhyols9kXL1ajBORZmouT";
 
 export default function Home() {
+  useSEO({
+    title: "Mahoney Tech Solutions | IT & Cybersecurity | Galveston, TX",
+    description: "Professional IT support and cybersecurity for residents and small businesses in Galveston, TX. Computer repair, Wi-Fi setup, virus removal, and more. Call 409-996-3178.",
+    canonical: "https://mahoneytechsolutions.com/",
+  });
+
   const [, setLocation] = useLocation();
   const videoRef = useRef<HTMLVideoElement>(null);
   const [videoPlaying, setVideoPlaying] = useState(false);

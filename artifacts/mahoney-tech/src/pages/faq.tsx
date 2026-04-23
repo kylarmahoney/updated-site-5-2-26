@@ -1,10 +1,16 @@
 import { useState } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Plus, X } from "lucide-react";
+import { useSEO } from "@/hooks/use-seo";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export default function FAQ() {
+  useSEO({
+    title: "FAQ | Mahoney Tech Solutions | Galveston, TX",
+    description: "Common questions about IT support and cybersecurity services from Mahoney Tech Solutions in Galveston, TX. Pricing, availability, service area, and more.",
+    canonical: "https://mahoneytechsolutions.com/faq",
+  });
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const faqs = [

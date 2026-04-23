@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useSEO } from "@/hooks/use-seo";
 
 const BOOKING_URL = "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3Hk4mSI1Q34yehBopGkPiOjENn3Rt3XSyL_kPdAd48SycFuN9aJaaMhyols9kXL1ajBORZmouT";
 
@@ -30,6 +31,12 @@ const contactSchema = z.object({
 type ContactFormValues = z.infer<typeof contactSchema>;
 
 export default function Contact() {
+  useSEO({
+    title: "Contact | Mahoney Tech Solutions | Galveston, TX",
+    description: "Get in touch with Mahoney Tech Solutions in Galveston, TX. Call, text, or fill out the form for IT support and cybersecurity help. Fast response guaranteed.",
+    canonical: "https://mahoneytechsolutions.com/contact",
+  });
+
   const { toast } = useToast();
 
   const form = useForm<ContactFormValues>({

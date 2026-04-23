@@ -83,7 +83,7 @@ export default function Home() {
           </h1>
 
           <p className="text-[1.1rem] leading-[1.75] text-ink2 font-light max-w-[480px] mb-10 drop-shadow">
-            Fast, reliable tech support for individuals and small businesses in Galveston and surrounding areas. On-site visits or remote help &mdash; available when you need it.
+            Professional IT and cybersecurity services for residents and small businesses across Galveston and the surrounding areas. On-site and remote support &mdash; delivered with speed, precision, and discretion.
           </p>
 
           <div className="flex flex-wrap gap-3">

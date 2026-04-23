@@ -59,6 +59,7 @@ export function Footer() {
             </div>
             <ul className="flex flex-col gap-[0.6rem] list-none text-[#666] text-[0.85rem] font-light mb-6">
               <li><a href="tel:4099963178" className="hover:text-white transition-colors">409-996-3178</a></li>
+              <li><a href="mailto:support@mahoneytechsolutions.com" className="hover:text-white transition-colors">support@mahoneytechsolutions.com</a></li>
               <li>Galveston, TX</li>
               <li>On-Site &amp; Remote</li>
             </ul>
@@ -73,13 +74,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-          <div className="font-mono text-[0.65rem] text-[#444] tracking-[0.08em]">
-            &copy; {new Date().getFullYear()} MAHONEY TECH SOLUTIONS &middot; GALVESTON, TX
-          </div>
-          <div className="font-display text-[1.4rem] text-rust tracking-[0.05em] hover:text-rust2 transition-colors">
-            <a href="tel:4099963178">409-996-3178</a>
-          </div>
+        <div className="font-mono text-[0.65rem] text-[#444] tracking-[0.08em]">
+          &copy; {new Date().getFullYear()} MAHONEY TECH SOLUTIONS &middot; GALVESTON, TX
         </div>
       </div>
     </footer>

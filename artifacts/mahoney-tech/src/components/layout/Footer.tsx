@@ -1,4 +1,7 @@
 import { Link } from "wouter";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
+
+const BOOKING_URL = "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3Hk4mSI1Q34yehBopGkPiOjENn3Rt3XSyL_kPdAd48SycFuN9aJaaMhyols9kXL1ajBORZmouT";
 
 export function Footer() {
   return (
@@ -12,8 +15,28 @@ export function Footer() {
                 MAHONEY TECH<br /><span className="text-rust2 text-[1.2rem]">SOLUTIONS</span>
               </div>
             </div>
-            <div className="text-[0.85rem] text-[#666] leading-[1.6] font-light max-w-[280px]">
+            <div className="text-[0.85rem] text-[#666] leading-[1.6] font-light max-w-[280px] mb-6">
               IT &amp; Cybersecurity solutions for individuals and small businesses. Galveston, TX and surrounding areas.
+            </div>
+            <div className="flex items-center gap-3">
+              <a
+                href="https://www.instagram.com/mahoneytechsolutions?igsh=NWMycHc2ZjBrYWY5&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 bg-[#1a1a2e] border border-[#2a2a2a] flex items-center justify-center text-[#666] hover:text-white hover:border-rust transition-colors"
+                aria-label="Instagram"
+              >
+                <FaInstagram className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.facebook.com/share/1ChDi2sqR5/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 bg-[#1a1a2e] border border-[#2a2a2a] flex items-center justify-center text-[#666] hover:text-white hover:border-rust transition-colors"
+                aria-label="Facebook"
+              >
+                <FaFacebook className="w-4 h-4" />
+              </a>
             </div>
           </div>
 
@@ -34,11 +57,19 @@ export function Footer() {
             <div className="font-mono text-[0.62rem] tracking-[0.2em] uppercase text-rust mb-[1.2rem]">
               Contact
             </div>
-            <ul className="flex flex-col gap-[0.6rem] list-none text-[#666] text-[0.85rem] font-light">
+            <ul className="flex flex-col gap-[0.6rem] list-none text-[#666] text-[0.85rem] font-light mb-6">
               <li><a href="tel:4099963178" className="hover:text-white transition-colors">409-996-3178</a></li>
               <li>Galveston, TX</li>
               <li>On-Site &amp; Remote</li>
             </ul>
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block font-mono text-[0.62rem] tracking-[0.15em] uppercase text-white bg-rust px-4 py-2 hover:bg-rust2 transition-colors"
+            >
+              Book a Consultation
+            </a>
           </div>
         </div>
 

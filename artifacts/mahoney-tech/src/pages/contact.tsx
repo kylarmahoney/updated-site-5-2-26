@@ -1,7 +1,8 @@
 import { Layout } from "@/components/layout/Layout";
 import { Tag } from "@/components/ui/tag";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, User, Clock } from "lucide-react";
+import { MapPin, Phone, User, Clock, CalendarCheck } from "lucide-react";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -16,6 +17,8 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+
+const BOOKING_URL = "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3Hk4mSI1Q34yehBopGkPiOjENn3Rt3XSyL_kPdAd48SycFuN9aJaaMhyols9kXL1ajBORZmouT";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Name is required"),
@@ -129,7 +132,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="flex gap-6 items-start">
+              <div className="flex gap-6 items-start pb-6 border-b border-line">
                 <div className="w-10 h-10 bg-rust flex items-center justify-center shrink-0 text-white mt-1">
                   <Clock className="w-5 h-5" />
                 </div>
@@ -138,6 +141,50 @@ export default function Contact() {
                   <div className="font-sans font-semibold text-[1.1rem] leading-[1.4] text-white">
                     Remote: 24/7<br />
                     <span className="text-steel font-normal">On-Site: Call Ahead</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex gap-6 items-start pb-6 border-b border-line">
+                <div className="w-10 h-10 bg-rust flex items-center justify-center shrink-0 text-white mt-1">
+                  <CalendarCheck className="w-5 h-5" />
+                </div>
+                <div className="flex-1">
+                  <div className="font-mono text-[0.6rem] tracking-[0.15em] uppercase text-steel mb-3">Book Online</div>
+                  <a
+                    href={BOOKING_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block w-full text-center font-mono text-[0.7rem] tracking-[0.12em] uppercase text-white bg-rust px-4 py-3 hover:bg-rust2 transition-colors"
+                  >
+                    Schedule IT Consultation
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex gap-6 items-start">
+                <div className="w-10 h-10 bg-[#1a1a2e] border border-[#2a2a2a] flex items-center justify-center shrink-0 mt-1">
+                  <FaInstagram className="w-4 h-4 text-[#666]" />
+                </div>
+                <div className="flex-1">
+                  <div className="font-mono text-[0.6rem] tracking-[0.15em] uppercase text-steel mb-3">Follow Us</div>
+                  <div className="flex gap-3">
+                    <a
+                      href="https://www.instagram.com/mahoneytechsolutions?igsh=NWMycHc2ZjBrYWY5&utm_source=qr"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 font-mono text-[0.7rem] tracking-[0.1em] uppercase text-[#888] border border-[#2a2a2a] px-3 py-2 hover:text-white hover:border-rust transition-colors"
+                    >
+                      <FaInstagram className="w-3.5 h-3.5" /> Instagram
+                    </a>
+                    <a
+                      href="https://www.facebook.com/share/1ChDi2sqR5/?mibextid=wwXIfr"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 font-mono text-[0.7rem] tracking-[0.1em] uppercase text-[#888] border border-[#2a2a2a] px-3 py-2 hover:text-white hover:border-rust transition-colors"
+                    >
+                      <FaFacebook className="w-3.5 h-3.5" /> Facebook
+                    </a>
                   </div>
                 </div>
               </div>

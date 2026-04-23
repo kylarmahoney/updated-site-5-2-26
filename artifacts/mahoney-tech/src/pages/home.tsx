@@ -3,6 +3,8 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "wouter";
 
+const BOOKING_URL = "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3Hk4mSI1Q34yehBopGkPiOjENn3Rt3XSyL_kPdAd48SycFuN9aJaaMhyols9kXL1ajBORZmouT";
+
 export default function Home() {
   const [, setLocation] = useLocation();
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -91,6 +93,14 @@ export default function Home() {
             <Button variant="outline" size="lg" onClick={handleServicesClick}>
               Our Services
             </Button>
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center font-mono text-[0.72rem] tracking-[0.12em] uppercase text-white border-2 border-white/30 px-6 py-3 hover:border-rust2 hover:text-rust2 transition-colors"
+            >
+              Book Consultation
+            </a>
           </div>
         </div>
 

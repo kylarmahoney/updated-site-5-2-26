@@ -49,13 +49,6 @@ export default function About() {
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-3 mt-10 pt-8 border-t border-line">
-              {["CompTIA A+", "CompTIA Network+", "CompTIA Security+", "Google IT Support"].map(cert => (
-                <div key={cert} className="font-mono text-[0.6rem] tracking-[0.12em] uppercase px-3 py-1.5 border border-line text-steel bg-bg2">
-                  {cert}
-                </div>
-              ))}
-            </div>
           </div>
 
         </div>
@@ -117,7 +110,7 @@ export default function About() {
             Based in Galveston, TX, we provide on-site service throughout Galveston Island and surrounding areas. Remote support is available anywhere in the US.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-[1px] bg-line border-2 border-line">
-            {["Galveston", "Texas City", "League City", "Clear Lake", "Dickinson", "La Marque", "Friendswood", "Anywhere (Remote)"].map(area => (
+            {["Galveston", "Texas City", "League City", "Clear Lake", "Dickinson", "La Marque", "Friendswood", "Houston", "Anywhere (Remote)"].map(area => (
               <div key={area} className="bg-bg p-5">
                 <div className="font-mono text-[0.6rem] text-rust tracking-[0.15em] mb-1">——</div>
                 <div className="font-sans font-semibold text-[0.85rem] text-ink">{area}</div>

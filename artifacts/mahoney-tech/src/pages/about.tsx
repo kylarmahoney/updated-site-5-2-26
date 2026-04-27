@@ -15,11 +15,12 @@ export default function About() {
       <section className="bg-bg2 py-20 lg:py-24 px-[5%] border-b-[3px] border-ink">
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-          <div className="bg-[#070d1a] h-[280px] sm:h-[350px] lg:h-[420px] flex items-center justify-center relative overflow-hidden border-[3px] border-line shadow-2xl">
-            <div className="font-display text-[8rem] sm:text-[12rem] text-white/5 leading-none absolute select-none pointer-events-none">
-              KM
-            </div>
-
+          <div className="relative overflow-hidden border-[3px] border-line shadow-2xl">
+            <img
+              src={`${import.meta.env.BASE_URL}kylar-mahoney.png`}
+              alt="Kylar Mahoney — IT & Cybersecurity Specialist"
+              className="w-full object-cover object-top block"
+            />
             <div className="absolute bottom-0 left-0 right-0 bg-rust p-4 sm:p-6 border-t-[3px] border-ink">
               <div className="font-display text-[1.4rem] sm:text-[1.6rem] text-white tracking-[0.04em] leading-none">
                 KYLAR MAHONEY

@@ -34,7 +34,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api", router);
 
 if (process.env.NODE_ENV === "production") {
-  const staticPath = path.join(process.cwd(), "artifacts/mahoney-tech/dist/public");
+  // __dirname is set by the esbuild banner to the dist/ folder of api-server.
+  // From dist/ we go up two levels to reach artifacts/, then into mahoney-tech.
+  const staticPath = path.resolve(__dirname, "../../mahoney-tech/dist/public");
   if (existsSync(staticPath)) {
     app.use(express.static(staticPath));
     app.get("*", (_req, res) => {

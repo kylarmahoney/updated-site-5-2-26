@@ -34,17 +34,22 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api", router);
 
 if (process.env.NODE_ENV === "production") {
-  // __dirname is set by the esbuild banner to the dist/ folder of api-server.
-  // From dist/ we go up two levels to reach artifacts/, then into mahoney-tech.
-  const staticPath = path.resolve(__dirname, "../../mahoney-tech/dist/public");
-  if (existsSync(staticPath)) {
+  // Try multiple candidate paths to locate the built frontend.
+  // Railway CWD is /app/artifacts/api-server; __dirname is .../dist inside that.
+  const candidates = [
+    path.resolve(__dirname, "../../mahoney-tech/dist/public"),
+    path.resolve(process.cwd(), "../mahoney-tech/dist/public"),
+    path.resolve(process.cwd(), "artifacts/mahoney-tech/dist/public"),
+  ];
+  const staticPath = candidates.find(existsSync);
+  if (staticPath) {
     app.use(express.static(staticPath));
     app.get("*", (_req, res) => {
       res.sendFile(path.join(staticPath, "index.html"));
     });
     logger.info({ staticPath }, "Serving static frontend files");
   } else {
-    logger.warn({ staticPath }, "Static path not found — frontend not served");
+    logger.warn({ candidates }, "Static path not found — frontend not served");
   }
 }
 

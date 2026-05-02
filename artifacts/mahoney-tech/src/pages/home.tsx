@@ -183,9 +183,17 @@ export default function Home() {
               On-Site &middot; Remote &middot; Same-Day Available
             </div>
           </div>
-          <Button variant="white" size="lg" onClick={() => window.location.href = "tel:4099963178"}>
-            Call 409-996-3178
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <Button variant="white" size="lg" onClick={() => window.location.href = "tel:4099963178"}>
+              Call 409-996-3178
+            </Button>
+            <a
+              href="mailto:support@mahoneytechsolutions.com"
+              className="flex items-center justify-center font-mono text-[0.72rem] tracking-[0.12em] uppercase text-white border-2 border-white/40 px-6 py-3 hover:border-white hover:bg-white/10 transition-colors whitespace-nowrap"
+            >
+              Email Us
+            </a>
+          </div>
         </div>
       </section>
       {/* TESTIMONIALS */}

@@ -16,15 +16,15 @@ function buildEmailHtml(name: string, contact: string, service: string, message:
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>New Lead — Mahoney Tech Solutions</title>
 </head>
-<body style="margin:0;padding:0;background-color:#0d1929;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#0d1929;padding:40px 20px;">
+<body style="margin:0;padding:0;background-color:#f0f2f5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f0f2f5;padding:40px 20px;">
     <tr>
       <td align="center">
         <table width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;">
 
           <!-- HEADER -->
           <tr>
-            <td style="background-color:#0a1220;border-top:4px solid #2567c4;padding:28px 36px;border-radius:2px 2px 0 0;">
+            <td style="background-color:#0d1929;border-top:4px solid #2567c4;padding:28px 36px;">
               <table width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
                   <td>
@@ -32,7 +32,7 @@ function buildEmailHtml(name: string, contact: string, service: string, message:
                     <h1 style="margin:6px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:22px;font-weight:700;color:#ffffff;letter-spacing:0.5px;">New Lead Received</h1>
                   </td>
                   <td align="right" style="vertical-align:middle;">
-                    <span style="background-color:#2567c4;color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 12px;border-radius:2px;">INBOUND</span>
+                    <span style="background-color:#2567c4;color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 12px;">INBOUND</span>
                   </td>
                 </tr>
               </table>
@@ -41,8 +41,8 @@ function buildEmailHtml(name: string, contact: string, service: string, message:
 
           <!-- TIMESTAMP BAND -->
           <tr>
-            <td style="background-color:#111e30;padding:10px 36px;border-bottom:1px solid #1e2d45;">
-              <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;color:#4a6080;letter-spacing:1px;">
+            <td style="background-color:#1a2e45;padding:10px 36px;">
+              <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;color:#8aaac8;letter-spacing:0.5px;">
                 Submitted ${timestamp} CT &nbsp;·&nbsp; mahoneytechsolutions.com/contact
               </p>
             </td>
@@ -50,14 +50,14 @@ function buildEmailHtml(name: string, contact: string, service: string, message:
 
           <!-- BODY -->
           <tr>
-            <td style="background-color:#0f1c2e;padding:36px 36px 28px;">
+            <td style="background-color:#ffffff;padding:36px 36px 28px;">
 
               <!-- SERVICE HIGHLIGHT -->
               <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:28px;">
                 <tr>
-                  <td style="background-color:#0a1220;border-left:3px solid #2567c4;padding:16px 20px;border-radius:0 2px 2px 0;">
-                    <p style="margin:0 0 4px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#4a6080;">Service Requested</p>
-                    <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:17px;font-weight:700;color:#ffffff;">${service}</p>
+                  <td style="background-color:#eef3fb;border-left:4px solid #2567c4;padding:16px 20px;">
+                    <p style="margin:0 0 4px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#5a7a9a;font-weight:600;">Service Requested</p>
+                    <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;font-weight:700;color:#0d1929;">${service}</p>
                   </td>
                 </tr>
               </table>
@@ -67,14 +67,14 @@ function buildEmailHtml(name: string, contact: string, service: string, message:
 
                 <!-- Name -->
                 <tr>
-                  <td style="padding-bottom:16px;border-bottom:1px solid #1a2a3d;">
+                  <td style="border-bottom:1px solid #e8ecf0;">
                     <table width="100%" cellpadding="0" cellspacing="0" border="0">
                       <tr>
-                        <td width="120" style="vertical-align:top;padding:14px 0;">
-                          <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#4a6080;font-weight:600;">Name</p>
+                        <td width="110" style="vertical-align:top;padding:14px 0;">
+                          <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#8a9ab0;font-weight:600;">Name</p>
                         </td>
                         <td style="vertical-align:top;padding:14px 0;">
-                          <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;color:#e0e8f0;font-weight:500;">${name}</p>
+                          <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;color:#0d1929;font-weight:600;">${name}</p>
                         </td>
                       </tr>
                     </table>
@@ -83,14 +83,14 @@ function buildEmailHtml(name: string, contact: string, service: string, message:
 
                 <!-- Contact -->
                 <tr>
-                  <td style="padding-bottom:16px;border-bottom:1px solid #1a2a3d;">
+                  <td style="border-bottom:1px solid #e8ecf0;">
                     <table width="100%" cellpadding="0" cellspacing="0" border="0">
                       <tr>
-                        <td width="120" style="vertical-align:top;padding:14px 0;">
-                          <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#4a6080;font-weight:600;">Contact</p>
+                        <td width="110" style="vertical-align:top;padding:14px 0;">
+                          <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#8a9ab0;font-weight:600;">Contact</p>
                         </td>
                         <td style="vertical-align:top;padding:14px 0;">
-                          <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;color:#2567c4;font-weight:500;">${contact}</p>
+                          <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;color:#2567c4;font-weight:600;">${contact}</p>
                         </td>
                       </tr>
                     </table>
@@ -102,11 +102,11 @@ function buildEmailHtml(name: string, contact: string, service: string, message:
                   <td>
                     <table width="100%" cellpadding="0" cellspacing="0" border="0">
                       <tr>
-                        <td width="120" style="vertical-align:top;padding:14px 0;">
-                          <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#4a6080;font-weight:600;">Message</p>
+                        <td width="110" style="vertical-align:top;padding:14px 0;">
+                          <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#8a9ab0;font-weight:600;">Message</p>
                         </td>
                         <td style="vertical-align:top;padding:14px 0;">
-                          <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;color:#e0e8f0;line-height:1.65;font-weight:400;">${message}</p>
+                          <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;color:#2c3e50;line-height:1.65;">${message}</p>
                         </td>
                       </tr>
                     </table>
@@ -119,21 +119,15 @@ function buildEmailHtml(name: string, contact: string, service: string, message:
 
           <!-- CTA -->
           <tr>
-            <td style="background-color:#0a1220;padding:24px 36px;border-top:1px solid #1a2a3d;">
-              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <td style="background-color:#f8f9fb;padding:24px 36px;border-top:1px solid #e8ecf0;border-left:1px solid #e8ecf0;border-right:1px solid #e8ecf0;">
+              <p style="margin:0 0 14px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#5a7a9a;font-weight:500;">Reply directly to this lead:</p>
+              <table cellpadding="0" cellspacing="0" border="0">
                 <tr>
+                  <td style="padding-right:10px;">
+                    <a href="tel:4099963178" style="display:inline-block;background-color:#2567c4;color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:12px 22px;">Call Client</a>
+                  </td>
                   <td>
-                    <p style="margin:0 0 14px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4a6080;">Reply directly to this lead:</p>
-                    <table cellpadding="0" cellspacing="0" border="0">
-                      <tr>
-                        <td style="padding-right:10px;">
-                          <a href="tel:4099963178" style="display:inline-block;background-color:#2567c4;color:#ffffff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:11px 20px;border-radius:2px;">Call Client</a>
-                        </td>
-                        <td>
-                          <a href="mailto:${contact}" style="display:inline-block;background-color:transparent;color:#2567c4;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:10px 20px;border:1px solid #2567c4;border-radius:2px;">Email Client</a>
-                        </td>
-                      </tr>
-                    </table>
+                    <a href="mailto:${contact}" style="display:inline-block;background-color:#ffffff;color:#2567c4;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:11px 22px;border:1px solid #2567c4;">Email Client</a>
                   </td>
                 </tr>
               </table>
@@ -142,19 +136,13 @@ function buildEmailHtml(name: string, contact: string, service: string, message:
 
           <!-- FOOTER -->
           <tr>
-            <td style="background-color:#070d1a;padding:20px 36px;border-radius:0 0 2px 2px;border-top:1px solid #111e30;">
-              <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                <tr>
-                  <td>
-                    <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;color:#2a3d55;">
-                      Mahoney Tech Solutions &nbsp;·&nbsp; Galveston, TX &nbsp;·&nbsp; 409-996-3178
-                    </p>
-                    <p style="margin:4px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;color:#1e2d45;">
-                      This notification was sent automatically when a visitor submitted the contact form at mahoneytechsolutions.com
-                    </p>
-                  </td>
-                </tr>
-              </table>
+            <td style="background-color:#0d1929;padding:18px 36px;">
+              <p style="margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;color:#4a6a8a;">
+                Mahoney Tech Solutions &nbsp;·&nbsp; Galveston, TX &nbsp;·&nbsp; 409-996-3178
+              </p>
+              <p style="margin:4px 0 0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;color:#2a4060;">
+                Auto-generated when a visitor submitted the contact form at mahoneytechsolutions.com
+              </p>
             </td>
           </tr>
 

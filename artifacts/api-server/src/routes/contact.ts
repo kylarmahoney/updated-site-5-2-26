@@ -15,8 +15,15 @@ function buildEmailHtml(name: string, contact: string, service: string, message:
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>New Lead — Mahoney Tech Solutions</title>
+  <meta name="color-scheme" content="light" />
+  <meta name="supported-color-schemes" content="light" />
+  <style>
+    :root { color-scheme: light !important; }
+    * { color-scheme: light !important; }
+    body { background-color: #f0f2f5 !important; color: #0d1929 !important; }
+  </style>
 </head>
-<body style="margin:0;padding:0;background-color:#f0f2f5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+<body style="margin:0;padding:0;background-color:#f0f2f5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color-scheme:light;"  bgcolor="#f0f2f5">
   <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f0f2f5;padding:40px 20px;">
     <tr>
       <td align="center">

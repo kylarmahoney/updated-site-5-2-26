@@ -89,9 +89,7 @@ export default function Home() {
             <br />SECURITY
           </h1>
 
-          <p className="text-[1.1rem] leading-[1.75] text-ink2 font-light max-w-[480px] mb-10 drop-shadow">
-            Professional IT and cybersecurity services for residents and small businesses across Galveston and the surrounding areas. On-site and remote support &mdash; delivered with speed, precision, and discretion.
-          </p>
+          <p className="text-[1.1rem] leading-[1.75] text-ink2 font-light max-w-[480px] mb-10 drop-shadow">Professional IT and cybersecurity services for residents and businesses across Galveston and the surrounding areas. On-site and remote support — delivered with speed, precision, and discretion.</p>
 
           <div className="flex flex-wrap gap-3">
             <Button onClick={() => window.location.href = "tel:4099963178"} size="lg">
@@ -132,7 +130,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
       {/* SERVICES STRIP */}
       <section className="bg-bg2 py-20 border-b-[3px] border-rust">
         <div className="max-w-[1200px] mx-auto px-[5%]">
@@ -175,7 +172,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* CTA BAND */}
       <section className="bg-rust py-16 px-[5%] border-b-[3px] border-bg">
         <div className="max-w-[1200px] w-full mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
@@ -192,7 +188,6 @@ export default function Home() {
           </Button>
         </div>
       </section>
-
       {/* TESTIMONIALS */}
       <section className="py-20 bg-bg border-b-[3px] border-line">
         <div className="max-w-[1200px] mx-auto px-[5%]">

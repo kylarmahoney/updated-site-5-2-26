@@ -1,3 +1,11 @@
 <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="180" height="180" rx="36" fill="#FF3C00"/>
+  <!-- Navy rounded background -->
+  <rect width="180" height="180" rx="36" fill="#0d1929"/>
+  <!-- Shield shape -->
+  <path d="M90 22L34 46V90C34 122 62 148 90 158C118 148 146 122 146 90V46L90 22Z" fill="#1e3a5f"/>
+  <path d="M90 30L40 52V90C40 119 66 143 90 152C114 143 140 119 140 90V52L90 30Z" fill="#2563eb" opacity="0.15"/>
+  <!-- Shield border -->
+  <path d="M90 30L40 52V90C40 119 66 143 90 152C114 143 140 119 140 90V52L90 30Z" stroke="#3b82f6" stroke-width="2.5" fill="none"/>
+  <!-- MTS text -->
+  <text x="90" y="104" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="38" fill="#ffffff" text-anchor="middle" letter-spacing="1">MTS</text>
 </svg>

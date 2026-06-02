@@ -111,7 +111,7 @@ export default function Home() {
 
         <div className="relative z-20 grid grid-cols-2 sm:grid-cols-4 border-t border-white/10">
           {[
-            { value: "7+", label: "Services Offered" },
+            { value: "8+", label: "Services Offered" },
             { value: "24/7", label: "Remote Support" },
             { value: "TX", label: "Galveston Based" },
             { value: "1:1", label: "Personal Service" },
@@ -153,7 +153,7 @@ export default function Home() {
               { num: "04", name: "Software Install & Config" },
               { num: "05", name: "Email & Account Issues" },
               { num: "06", name: "POS & Office Systems" },
-              { num: "07", name: "On-Site or Remote Help" },
+              { num: "07", name: "Social Media Management & Creation" },
               { num: "08", name: "Cybersecurity & Protection" },
             ].map((svc) => (
               <div

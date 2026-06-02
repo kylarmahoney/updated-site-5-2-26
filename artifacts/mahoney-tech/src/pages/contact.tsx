@@ -259,6 +259,7 @@ export default function Contact() {
                           <option value="Software & Updates">Software &amp; Updates</option>
                           <option value="Email & Account Help">Email &amp; Account Help</option>
                           <option value="POS & Office Systems">POS &amp; Office Systems</option>
+                          <option value="Social Media Management & Creation">Social Media Management &amp; Creation</option>
                           <option value="Cybersecurity">Cybersecurity</option>
                           <option value="Other">Other</option>
                         </select>

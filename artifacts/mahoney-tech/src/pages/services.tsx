@@ -135,6 +135,27 @@ const servicesList = [
   },
   {
     num: "07",
+    title: "Social Media Management & Creation",
+    desc: "Profile setup, content creation, branding consistency, and ongoing account optimization.",
+    tags: ["Marketing", "Social Media"],
+    details: {
+      overview:
+        "A strong social media presence builds trust and brings in customers — but it takes time you may not have. We handle everything from setting up professional profiles to creating and scheduling content that actually represents your business.",
+      includes: [
+        "Facebook, Instagram, Google Business setup and optimization",
+        "Profile branding and bio copywriting",
+        "Content creation (graphics, captions, posts)",
+        "Post scheduling and consistency management",
+        "Google Business profile setup and updates",
+        "Review response strategy",
+        "Hashtag and reach optimization",
+        "Monthly performance reporting",
+      ],
+      note: "Packages available for one-time setup or ongoing monthly management.",
+    },
+  },
+  {
+    num: "08",
     title: "Cybersecurity",
     desc: "Malware removal, antivirus setup, password security, and basic threat assessments.",
     tags: ["Security", "Protection"],

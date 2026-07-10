@@ -111,7 +111,7 @@ export default function Home() {
 
         <div className="relative z-20 grid grid-cols-2 sm:grid-cols-4 border-t border-white/10">
           {[
-            { value: "8+", label: "Services Offered" },
+            { value: "10+", label: "Services Offered" },
             { value: "24/7", label: "Remote Support" },
             { value: "TX", label: "Galveston Based" },
             { value: "1:1", label: "Personal Service" },
@@ -147,14 +147,16 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[1px] bg-line">
             {[
-              { num: "01", name: "Computer & Laptop Troubleshooting" },
-              { num: "02", name: "Wi-Fi & Network Issues" },
-              { num: "03", name: "Printer Setup & Fixes" },
-              { num: "04", name: "Software Install & Config" },
+              { num: "01", name: "Managed IT & Security Retainers" },
+              { num: "02", name: "Computer & Laptop Troubleshooting" },
+              { num: "03", name: "Wi-Fi & Network Issues" },
+              { num: "04", name: "Printer Setup & Fixes" },
               { num: "05", name: "Email & Account Issues" },
               { num: "06", name: "POS & Office Systems" },
-              { num: "07", name: "Social Media Management & Creation" },
-              { num: "08", name: "Cybersecurity & Protection" },
+              { num: "07", name: "Website Design & Development" },
+              { num: "08", name: "Social Media Management & Creation" },
+              { num: "09", name: "Cybersecurity & Protection" },
+              { num: "10", name: "Software Install & Config" },
             ].map((svc) => (
               <div
                 key={svc.num}

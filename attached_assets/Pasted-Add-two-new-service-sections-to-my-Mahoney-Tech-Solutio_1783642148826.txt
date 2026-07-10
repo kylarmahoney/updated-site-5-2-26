@@ -1,0 +1,43 @@
+Add two new service sections to my Mahoney Tech Solutions services page. Match the exact structure, styling, and components of the existing service sections (numbered header, title, short subtitle, tag pills, divider, intro paragraph, "WHAT'S INCLUDED" label with arrow bullet list, and an italic callout note in a bordered box at the bottom). Do not change fonts, colors, or layout — reuse the existing section component/markup pattern.
+
+SECTION 1 — Insert as the FIRST service section on the page, numbered 01. Renumber all existing sections accordingly (current 01 becomes 02, etc.).
+
+Number: 01
+Title: MANAGED IT & SECURITY RETAINERS
+Subtitle: Ongoing IT support and security for a flat monthly rate — your outsourced IT department.
+Tags: COMMERCIAL, SECURITY
+Intro paragraph: Most small businesses can't justify a full-time IT hire — but waiting until something breaks costs more than preventing it. Our monthly retainers give you proactive monitoring, priority response, and a security-first approach for one predictable price.
+What's included:
+- Priority same-day response for covered issues
+- Proactive monitoring and maintenance of workstations and network
+- Security awareness training for your staff (phishing & phone scam defense)
+- Patch management and system updates handled for you
+- MFA rollout and password security across all business accounts
+- Data backup monitoring and recovery readiness
+- Quarterly security review and technology roadmap
+- Discounted rates on projects outside the retainer
+Callout note: Plans scale to your business — from a two-person office to multi-location operations. Book a free assessment to get a quote.
+
+SECTION 2 — Insert immediately AFTER the "POS & Office Systems" section, using the next number in sequence. Renumber any sections that follow it.
+
+Title: WEBSITE DESIGN & DEVELOPMENT
+Subtitle: Professional websites that bring in customers — built, hosted, and maintained for you.
+Tags: WEB, BRANDING
+Intro paragraph: Your website is often the first impression a customer gets. We design clean, fast, mobile-friendly sites that represent your business properly — and unlike big agencies, we stick around to keep them updated and secure.
+What's included:
+- Custom website design and full content buildout
+- Mobile-responsive layouts that look right on every device
+- Contact forms and lead capture that route straight to your inbox
+- Local SEO setup so Galveston customers actually find you
+- Google Business profile integration
+- Domain, hosting, and professional email setup
+- Site security, backups, and ongoing maintenance
+- Copywriting and photo curation included
+Callout note: Every site includes a maintenance option — because an outdated website quietly costs you customers.
+
+ALSO UPDATE SEO METADATA:
+Change the site's meta description to: "Managed IT and cybersecurity for Galveston small businesses — monthly support plans, security training, web design, and same-day computer repair. Call 409-996-3178."
+Update the page title tag to: "Mahoney Tech Solutions | Managed IT & Cybersecurity | Galveston, TX"
+Add these to the SEO keywords if a keywords list exists: managed IT services Galveston, IT retainer Galveston, security awareness training Galveston, web design Galveston TX.
+
+If each section has a "BOOK THIS SERVICE" button, include it on both new sections using the same component and link target as the existing ones. After making changes, verify the section numbering is sequential with no duplicates and the page renders correctly on mobile.

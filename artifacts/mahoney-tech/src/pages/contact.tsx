@@ -253,12 +253,14 @@ export default function Contact() {
                           {...field}
                         >
                           <option value="">Select a service...</option>
+                          <option value="Managed IT & Security Retainer">Managed IT &amp; Security Retainer</option>
                           <option value="Computer & Laptop Troubleshooting">Computer &amp; Laptop Troubleshooting</option>
                           <option value="Wi-Fi & Network Issues">Wi-Fi &amp; Network Issues</option>
                           <option value="Printer Setup & Fixes">Printer Setup &amp; Fixes</option>
                           <option value="Software & Updates">Software &amp; Updates</option>
                           <option value="Email & Account Help">Email &amp; Account Help</option>
                           <option value="POS & Office Systems">POS &amp; Office Systems</option>
+                          <option value="Website Design & Development">Website Design &amp; Development</option>
                           <option value="Social Media Management & Creation">Social Media Management &amp; Creation</option>
                           <option value="Cybersecurity">Cybersecurity</option>
                           <option value="Other">Other</option>

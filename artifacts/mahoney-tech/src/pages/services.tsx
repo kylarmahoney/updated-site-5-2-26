@@ -9,6 +9,27 @@ const BOOKING_URL = "https://calendar.google.com/calendar/u/0/appointments/sched
 const servicesList = [
   {
     num: "01",
+    title: "Managed IT & Security Retainers",
+    desc: "Ongoing IT support and security for a flat monthly rate — your outsourced IT department.",
+    tags: ["Commercial", "Security"],
+    details: {
+      overview:
+        "Most small businesses can't justify a full-time IT hire — but waiting until something breaks costs more than preventing it. Our monthly retainers give you proactive monitoring, priority response, and a security-first approach for one predictable price.",
+      includes: [
+        "Priority same-day response for covered issues",
+        "Proactive monitoring and maintenance of workstations and network",
+        "Security awareness training for your staff (phishing & phone scam defense)",
+        "Patch management and system updates handled for you",
+        "MFA rollout and password security across all business accounts",
+        "Data backup monitoring and recovery readiness",
+        "Quarterly security review and technology roadmap",
+        "Discounted rates on projects outside the retainer",
+      ],
+      note: "Plans scale to your business — from a two-person office to multi-location operations. Book a free assessment to get a quote.",
+    },
+  },
+  {
+    num: "02",
     title: "Computer & Laptop Troubleshooting",
     desc: "Slow performance, crashes, viruses, hardware failures, and general tune-ups.",
     tags: ["Hardware", "Software"],
@@ -29,7 +50,7 @@ const servicesList = [
     },
   },
   {
-    num: "02",
+    num: "03",
     title: "Wi-Fi & Network Issues",
     desc: "Router setup, dead zones, slow speeds, and whole-home or office networking.",
     tags: ["Networking", "Security"],
@@ -50,7 +71,7 @@ const servicesList = [
     },
   },
   {
-    num: "03",
+    num: "04",
     title: "Printer Setup & Fixes",
     desc: "Wireless printing, driver installation, and frustrating connectivity issues.",
     tags: ["Hardware", "Peripherals"],
@@ -71,7 +92,7 @@ const servicesList = [
     },
   },
   {
-    num: "04",
+    num: "05",
     title: "Software & Updates",
     desc: "Installation, system updates, driver updates, and application troubleshooting.",
     tags: ["Software", "OS"],
@@ -92,7 +113,7 @@ const servicesList = [
     },
   },
   {
-    num: "05",
+    num: "06",
     title: "Email & Account Help",
     desc: "Setup, recovery, and security for Gmail, Outlook, Apple Mail, and more.",
     tags: ["Cloud", "Security"],
@@ -113,7 +134,7 @@ const servicesList = [
     },
   },
   {
-    num: "06",
+    num: "07",
     title: "POS & Office Systems",
     desc: "Point-of-sale setup, maintenance, and troubleshooting for small business tech.",
     tags: ["Commercial", "Support"],
@@ -134,7 +155,28 @@ const servicesList = [
     },
   },
   {
-    num: "07",
+    num: "08",
+    title: "Website Design & Development",
+    desc: "Professional websites that bring in customers — built, hosted, and maintained for you.",
+    tags: ["Web", "Branding"],
+    details: {
+      overview:
+        "Your website is often the first impression a customer gets. We design clean, fast, mobile-friendly sites that represent your business properly — and unlike big agencies, we stick around to keep them updated and secure.",
+      includes: [
+        "Custom website design and full content buildout",
+        "Mobile-responsive layouts that look right on every device",
+        "Contact forms and lead capture that route straight to your inbox",
+        "Local SEO setup so Galveston customers actually find you",
+        "Google Business profile integration",
+        "Domain, hosting, and professional email setup",
+        "Site security, backups, and ongoing maintenance",
+        "Copywriting and photo curation included",
+      ],
+      note: "Every site includes a maintenance option — because an outdated website quietly costs you customers.",
+    },
+  },
+  {
+    num: "09",
     title: "Social Media Management & Creation",
     desc: "Profile setup, content creation, branding consistency, and ongoing account optimization.",
     tags: ["Marketing", "Social Media"],
@@ -155,7 +197,7 @@ const servicesList = [
     },
   },
   {
-    num: "08",
+    num: "10",
     title: "Cybersecurity",
     desc: "Malware removal, antivirus setup, password security, and basic threat assessments.",
     tags: ["Security", "Protection"],
